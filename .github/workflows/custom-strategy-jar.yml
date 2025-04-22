@@ -19,13 +19,9 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-      # Build the entire project to ensure all dependencies are available
-      - name: Build entire project
-        run: mvn clean install -DskipTests
-
       # Build just our custom module
       - name: Build Custom Strategy JAR
-        run: mvn clean package -pl custom-avro-schema-naming-strategy -DskipTests
+        run: mvn clean package -pl custom-avro-schema-naming-strategy -am -DskipTests
 
       - name: Upload Custom JAR Artifact
         uses: actions/upload-artifact@v4

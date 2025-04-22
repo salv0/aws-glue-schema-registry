@@ -1,13 +1,7 @@
 name: MavenCI
 
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  release:
-    branches: [ master ]
-    types: [ created ]
+  workflow_dispatch: {} # manual trigger
 
 jobs:
   build:

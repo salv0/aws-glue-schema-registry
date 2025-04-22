@@ -18,17 +18,18 @@
   <dependencies>
     <dependency>
       <groupId>${project.parent.groupId}</groupId>
-      <artifactId>common</artifactId>
+      <artifactId>schema-registry-common</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>${project.parent.groupId}</groupId>
-      <artifactId>serializer-deserializer</artifactId>
+      <artifactId>schema-registry-serde</artifactId>
       <version>${project.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.avro</groupId>
       <artifactId>avro</artifactId>
+      <!-- version is inherited from the parent’s dependencyManagement -->
     </dependency>
   </dependencies>
 
