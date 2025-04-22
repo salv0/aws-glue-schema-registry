@@ -18,7 +18,7 @@ jobs:
           java-version: '11'
 
       - name: Build Custom Strategy JAR
-        run: mvn clean install -pl custom-avro-schema-naming-strategy
+        run: mvn clean install -pl custom-avro-schema-naming-strategy -am
 
       - name: Upload Custom JAR Artifact
         uses: actions/upload-artifact@v4
