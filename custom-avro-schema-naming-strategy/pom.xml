@@ -7,7 +7,8 @@
     <groupId>com.amazonaws</groupId>
     <artifactId>aws-glue-schema-registry</artifactId>
     <version>1.1.23</version>
-  </parent>
+    <relativePath>../pom.xml</relativePath>
+</parent>
 
   <artifactId>custom-avro-schema-naming-strategy</artifactId>
   <packaging>jar</packaging>
